@@ -18,6 +18,9 @@ export const Container = styled.div`
     div:first-child {
       img {
         max-width: 18.75rem;
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
 
@@ -58,6 +61,11 @@ export const Container = styled.div`
         color: #ffffff;
         padding: 0.13em;
         align-self: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

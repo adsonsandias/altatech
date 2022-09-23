@@ -3,9 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   :root {
     --primary-gradient: linear-gradient(274.05deg, #007cff 33.64%, #dfb5eb 122.13%);
+    --secondary-gradient: linear-gradient(237.41deg, #A0B8FF -47.44%, #F3FEFF 69.81%), #F0F4F9;
     --primary-color: #203C87;
     --secondary-color: #007CFF;
+    --tertiary-color: #EDF1F8;
     --text-color-2: #434343;
+    --text-color-3: #7e7f81;
   }
   * {
     margin: 0;
