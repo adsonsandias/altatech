@@ -5,7 +5,7 @@ import { Container } from './styles';
 export function Product() {
   return (
     <Container>
-      <h1>Product</h1>
+      <h1>Produtos</h1>
       <div>
         <ProductItem />
         <ProductItem />

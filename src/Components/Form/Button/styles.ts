@@ -13,7 +13,14 @@ export const ButtonStyles = styled.button`
   font-size: 1.13rem;
   line-height: 1.69rem;
   color: #ffffff;
-  padding: 0.13em;
+  padding: 0.13rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 15px 25px rgba(0, 124, 255, 0.25),
+      -10px -5px 25px rgba(223, 181, 235, 0.25);
+  }
 
   @media (max-width: 680px) {
     width: 180px;
@@ -33,8 +40,8 @@ export const ButtonStyles = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     background: rgba(255, 255, 255, 0.36);
     backdrop-filter: blur(28px);
     border-radius: 0.88rem;
