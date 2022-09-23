@@ -1,5 +1,5 @@
 import { Button } from '../../Form/Button';
-import { ProductItem } from '../../ProductItem';
+import { ProductItem } from './ProductItem';
 import { Container } from './styles';
 
 export function Product() {

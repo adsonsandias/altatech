@@ -13,9 +13,9 @@ import { ReactComponent as IconeMenuCloud } from '../../assets/cloud-upload.svg'
 import { ReactComponent as IconeMenuService } from '../../assets/service.svg';
 import { ReactComponent as IconeMenuLocation } from '../../assets/location.svg';
 
-import { ReactComponent as Bg01 } from '../../assets/Ellipse1.svg';
-import { ReactComponent as Bg02 } from '../../assets/Ellipse2.svg';
-import { ReactComponent as Bg03 } from '../../assets/Ellipse3.svg';
+import { ReactComponent as BackgroundEffect01 } from '../../assets/Ellipse1.svg';
+import { ReactComponent as BackgroundEffect02 } from '../../assets/Ellipse2.svg';
+import { ReactComponent as BackgroundEffect03 } from '../../assets/Ellipse3.svg';
 
 import {
   ButtonMenuMobileStyles,
@@ -31,8 +31,6 @@ export function Header() {
   const [menuMobile, setMenuMobile] = React.useState(false);
   const [search, setSearch] = React.useState(false);
 
-  console.log(search);
-
   return (
     <HeaderStyles>
       <ContactHeaderStyles>
@@ -40,9 +38,9 @@ export function Header() {
         seu orçamento!
       </ContactHeaderStyles>
       <ContentsHeaderStyles>
-        <Bg01 />
-        <Bg02 />
-        <Bg03 />
+        <BackgroundEffect01 />
+        <BackgroundEffect02 />
+        <BackgroundEffect03 />
         <div>
           <IconeLogo />
           <IconeLogoMobile />

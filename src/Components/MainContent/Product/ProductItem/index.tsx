@@ -1,4 +1,4 @@
-import notebook from '../../assets/Notebook.jpg';
+import notebook from '../../../../assets/Notebook.jpg';
 import { Container } from './styles';
 
 export function ProductItem() {
