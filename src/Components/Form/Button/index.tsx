@@ -7,5 +7,9 @@ interface IBUTTON {
 export function Button({ ...props }: IBUTTON) {
   const { title } = props;
 
-  return <ButtonStyles>{title}</ButtonStyles>;
+  return (
+    <ButtonStyles>
+      <div>{title}</div>
+    </ButtonStyles>
+  );
 }

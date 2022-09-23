@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeaderStyles = styled.header`
   height: 714px;
   overflow: hidden;
+  position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 
