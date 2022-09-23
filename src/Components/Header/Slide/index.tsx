@@ -1,8 +1,8 @@
 import { Container } from './styles';
-import { ReactComponent as IconeNuvem } from '../../assets/nuvem.svg';
-import { ReactComponent as IconeArrowLeft } from '../../assets/arrow-left.svg';
-import { ReactComponent as IconeArrowRight } from '../../assets/arrow-right.svg';
-import { Button } from '../Form/Button';
+import { ReactComponent as IconeNuvem } from '../../../assets/nuvem.svg';
+import { ReactComponent as IconeArrowLeft } from '../../../assets/arrow-left.svg';
+import { ReactComponent as IconeArrowRight } from '../../../assets/arrow-right.svg';
+import { Button } from '../../Form/Button';
 
 export function Slide() {
   return (
