@@ -11,7 +11,7 @@ export function Product() {
         <ProductItem />
         <ProductItem />
       </div>
-      <Button title="Ver mais" />
+      <Button type="button">Ver mais</Button>
     </Container>
   );
 }

@@ -80,7 +80,7 @@ export function Budget() {
               value={message}
               onChange={(event) => setMessage(event.target.value)}
             />
-            <Button title="Enviar mensagem" />
+            <Button type="button">Enviar mensagem</Button>
           </form>
         </div>
       </div>

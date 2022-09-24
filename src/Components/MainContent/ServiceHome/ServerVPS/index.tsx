@@ -53,7 +53,7 @@ export function ServerVPS() {
       <div>
         <img src={IconeServeVps} alt="Server VPS" />
       </div>
-      <Button title="Ver mais" />
+      <Button type="button">Ver mais</Button>
     </Container>
   );
 }

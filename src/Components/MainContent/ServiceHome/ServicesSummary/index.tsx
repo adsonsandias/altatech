@@ -19,7 +19,7 @@ export function ServicesSummary() {
           <span>Opções flexíveis de armazenamento</span> solicite mais
           informações
         </p>
-        <Button title="Ver mais" />
+        <Button type="button">Ver mais</Button>
       </div>
       <div>
         <h4>Infraestrutura</h4>
@@ -100,7 +100,7 @@ export function ServicesSummary() {
           time, deixando que o fornecedor cuide daquilo que não faz parte do seu
           core business!
         </p>
-        <Button title="Ver mais" />
+        <Button type="button">Ver mais</Button>
       </div>
 
       <NavStyles>
