@@ -13,7 +13,7 @@ export function Slide() {
             Backup em nuvem: <br></br>
             <span>Segurança</span> avançada<br></br> para seus Dados
           </h1>
-          <Button title="Saiba mais" />
+          <Button type="button">Saiba mais</Button>
         </div>
         <IconeNuvem />
       </div>

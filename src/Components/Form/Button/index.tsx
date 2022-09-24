@@ -1,15 +1,16 @@
 import { ButtonStyles } from './styles';
 
 interface IBUTTON {
-  title: string;
+  children: string;
+  type?: 'button' | 'submit' | 'reset' | undefined;
 }
 
-export function Button({ ...props }: IBUTTON) {
-  const { title } = props;
+export function Button({ children, ...props }: IBUTTON) {
+  const { type } = props;
 
   return (
-    <ButtonStyles>
-      <div>{title}</div>
+    <ButtonStyles type={type}>
+      <div>{children}</div>
     </ButtonStyles>
   );
 }
