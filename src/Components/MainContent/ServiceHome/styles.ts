@@ -5,6 +5,9 @@ export const Container = styled.section`
   margin-top: 3.88rem;
   background: var(--secondary-gradient);
   padding-bottom: 6.63rem;
+  @media (max-width: 480px) {
+    padding-bottom: 3.88rem;
+  }
 
   & > div {
     max-width: 1120px;
@@ -27,10 +30,22 @@ export const Container = styled.section`
       padding-top: 3.38rem;
       padding-bottom: 3rem;
       font-weight: 600;
-      font-size: 48px;
-      line-height: 72px;
+      font-size: 2.63rem;
+      line-height: 4.5rem;
       color: var(--primary-color);
       text-align: center;
+
+      @media (max-width: 680px) {
+        font-size: 2.25rem;
+        line-height: initial;
+        padding-top: 2.25rem;
+        padding-bottom: 2rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
     }
   }
 `;
