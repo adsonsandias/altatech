@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Slide } from './Slide';
+import { motion } from 'framer-motion';
 
 import { ReactComponent as IconeBag } from '../../assets/bag.svg';
 import { ReactComponent as IconeLogo } from '../../assets/logo.svg';
@@ -73,6 +74,7 @@ export function Header() {
             </li>
           </ul>
         </NavStyles>
+
         <UtilityContentsStyles isOpen={search}>
           <input
             type="search"
@@ -80,15 +82,32 @@ export function Header() {
             name="search"
             id="search"
           />
-          <button onClick={() => setSearch(!search)} type="button">
+
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => setSearch(!search)}
+            type="button"
+          >
             <IconeSearch />
-          </button>
-          <button type="button">
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            type="button"
+          >
             <IconeBag />
-          </button>
-          <button type="button">
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            type="button"
+          >
             <IconeUser />
-          </button>
+          </motion.button>
+
           <ButtonMenuMobileStyles
             isActive={menuMobile}
             onClick={() => setMenuMobile(!menuMobile)}

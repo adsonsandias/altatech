@@ -132,65 +132,22 @@ export const Container = styled.div`
 
 /* Nav slide */
 export const NavStyles = styled.div`
-  max-width: 1120px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: -3rem;
-  width: 100%;
-
-  @media (max-width: 930px) {
-    padding-top: 1.5rem;
-  }
-  @media (max-width: 480px) {
-    bottom: -2rem;
-    padding-top: 0.88rem;
-    height: 2.5rem;
-  }
-
-  button {
-    width: 64px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid rgba(160, 184, 255, 0.25);
-    backdrop-filter: blur(10px);
-
-    svg path {
-      fill: #a0b8ff;
-    }
+  div {
+    position: absolute;
+    bottom: -3rem;
+    width: 100%;
 
     @media (max-width: 480px) {
-      width: 54px;
-      height: 32px;
-
-      svg {
-        height: 18px;
-      }
+      bottom: -2rem;
+      padding-top: 0.88rem;
+      height: 2.5rem;
     }
 
-    transition: background-color 0.3s ease, transform 0.3s ease,
-      box-shadow 0.3s ease;
+    button {
+      border: 2px solid rgba(160, 184, 255, 0.25);
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-      transform: scale(1.1);
-      box-shadow: 0px 6px 19px rgba(160, 184, 255, 0.25);
-    }
-
-    @media (max-width: 480px) {
-      &:nth-child(2) {
-        position: absolute;
-        right: 1rem;
-      }
-      &:nth-child(1) {
-        position: absolute;
-        left: 1rem;
+      svg path {
+        fill: #a0b8ff;
       }
     }
   }

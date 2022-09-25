@@ -38,9 +38,8 @@ export const ContactHeaderStyles = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(29px);
   height: 2.5rem;
-  background: rgba(239, 240, 242, 0.3);
+  background: rgba(239, 240, 242, 0.5);
   font-size: 0.75rem;
   line-height: 1.13rem;
   @media (max-width: 530px) {
@@ -145,7 +144,7 @@ export const NavStyles = styled.nav<IISACTIVE>`
         props.isActive ? '1.56rem 0.5rem 1.56rem 1.56rem' : '0'};
       top: 4.5rem;
       right: 1rem;
-      background: #fff;
+      background: #ffffff;
       padding: 1rem;
       z-index: 9999;
     }
@@ -159,7 +158,7 @@ export const NavStyles = styled.nav<IISACTIVE>`
         text-decoration: none;
         padding: 0.5rem 1rem;
         background-color: transparent;
-        transition: border-bottom 0.4s ease, background-color 0.4s ease;
+        transition: all 0.3s ease;
         border-bottom: ${(props) =>
           props.isActive ? 'none' : '2px solid transparent'};
         border-radius: ${(props) => (props.isActive ? '0.94rem' : '0')};
@@ -231,8 +230,7 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
     border-radius: 0.94rem;
     transition: all ease 0.3s;
     border: 1.5px solid #8f93f1;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 1);
     font-weight: 400;
     font-size: 1rem;
     height: 4rem;
@@ -270,12 +268,10 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
     width: 40px;
     height: 40px;
     background-color: transparent;
-    backdrop-filter: blur(10px);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* transition: all 0.3s ease; */
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.3);
-      transform: scale(1.1);
     }
 
     & + button {

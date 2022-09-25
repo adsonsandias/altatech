@@ -9,7 +9,11 @@ export function Button({ children, ...props }: IBUTTON) {
   const { type } = props;
 
   return (
-    <ButtonStyles type={type}>
+    <ButtonStyles
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      type={type}
+    >
       <div>{children}</div>
     </ButtonStyles>
   );
