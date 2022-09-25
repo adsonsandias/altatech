@@ -8,6 +8,18 @@ export const Container = styled.section`
   width: 100%;
   display: flex;
   margin-top: 3.88rem;
+  @media (max-width: 1180px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @media (max-width: 930px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (max-width: 780px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
   & > div {
     background: var(--primary-gradient);
@@ -16,7 +28,6 @@ export const Container = styled.section`
     position: relative;
     padding: 0.13rem;
     flex: 1;
-    height: 74.75rem;
     display: flex;
     overflow: hidden;
 
@@ -26,6 +37,12 @@ export const Container = styled.section`
       background: #ffffff;
       border-radius: 1.44rem;
       padding: 3.13rem;
+      @media (max-width: 680px) {
+        padding: 2rem;
+      }
+      @media (max-width: 480px) {
+        padding: 1rem;
+      }
 
       h1 {
         font-weight: 600;
@@ -38,12 +55,14 @@ export const Container = styled.section`
         @media (max-width: 680px) {
           font-size: 2.25rem;
           margin-bottom: 1.5rem;
+          line-height: initial;
         }
 
         @media (max-width: 480px) {
           font-size: 1.5rem;
-          margin-bottom: 1.5rem;
-          line-height: initial;
+          padding-top: 1.5rem;
+
+          line-height: 1.2;
         }
       }
 
@@ -60,8 +79,20 @@ export const Container = styled.section`
           color: var(--text-color-2);
           margin-bottom: 0.5rem;
 
+          @media (max-width: 680px) {
+            font-size: 1rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 0.88rem;
+          }
+
           & + input {
             margin-bottom: 1.5rem;
+
+            @media (max-width: 480px) {
+              margin-bottom: 0.75rem;
+            }
           }
         }
 
@@ -76,6 +107,9 @@ export const Container = styled.section`
           font-size: 1rem;
           margin-bottom: 2.63rem;
           resize: none;
+          @media (max-width: 480px) {
+            margin-bottom: 1rem;
+          }
 
           &:hover,
           &:focus {
@@ -89,6 +123,10 @@ export const Container = styled.section`
         button {
           width: 100%;
           margin-bottom: 5.75rem;
+
+          @media (max-width: 680px) {
+            margin-bottom: 1.5rem;
+          }
         }
 
         & > div {
@@ -102,6 +140,10 @@ export const Container = styled.section`
           label:nth-child(3) {
             grid-area: 1/2;
           }
+
+          @media (max-width: 680px) {
+            gap: 0rem 0.5rem;
+          }
         }
       }
     }
@@ -113,6 +155,9 @@ export const Container = styled.section`
       left: -189px;
       top: -81px;
       filter: blur(50px);
+      @media (max-width: 480px) {
+        top: -178px;
+      }
     }
 
     & > svg:nth-child(2) {
@@ -121,6 +166,9 @@ export const Container = styled.section`
       right: -317px;
       top: -208px;
       filter: blur(50px);
+      @media (max-width: 480px) {
+        top: -435px;
+      }
     }
 
     & > svg:nth-child(3) {
@@ -129,6 +177,10 @@ export const Container = styled.section`
       left: -120px;
       bottom: -120px;
       filter: blur(125px);
+      @media (max-width: 480px) {
+        left: -242px;
+        bottom: -244px;
+      }
     }
 
     & > svg:nth-child(4) {
@@ -137,6 +189,9 @@ export const Container = styled.section`
       right: -320px;
       bottom: 197px;
       filter: blur(50px);
+      @media (max-width: 480px) {
+        right: -470px;
+      }
     }
 
     & > svg:nth-child(5) {
@@ -145,6 +200,10 @@ export const Container = styled.section`
       right: -354px;
       bottom: -600px;
       filter: blur(50px);
+      @media (max-width: 480px) {
+        right: -308px;
+        bottom: -738px;
+      }
     }
   }
 `;

@@ -8,6 +8,18 @@ export const Container = styled.section`
     max-width: 1120px;
     margin: 0 auto;
     padding: 3.25rem 0;
+    @media (max-width: 1180px) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    @media (max-width: 930px) {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+    @media (max-width: 780px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
 
     h1 {
       font-weight: 600;
