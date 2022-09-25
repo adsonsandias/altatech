@@ -7,16 +7,30 @@ export const HeaderStyles = styled.header`
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 
+  @media (max-width: 1020px) {
+    height: 674px;
+  }
   @media (max-width: 930px) {
     height: 600px;
+  }
+  @media (max-width: 850px) {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
   }
   @media (max-width: 780px) {
     height: 576px;
   }
+  @media (max-width: 680px) {
+    height: 532px;
+  }
+  @media (max-width: 632px) {
+    height: 500px;
+  }
+  @media (max-width: 530px) {
+    height: 396px;
+  }
   @media (max-width: 480px) {
     height: 520px;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
   }
 `;
 
