@@ -44,6 +44,7 @@ export function Budget() {
               type="text"
               placeholder="Seu nome completo"
               value={name}
+              required
               onChange={(event) => setName(event.target.value)}
             />
             <div>
@@ -51,15 +52,13 @@ export function Budget() {
                 title="Telefone"
                 type="tel"
                 placeholder="Ex: (99) 9 9999-999"
-                required
                 value={phone}
                 onChange={(event) => setPhone(event.target.value)}
               />
               <Input
                 title="CNPJ"
-                type="number"
+                type="text"
                 placeholder="Ex: 99.999.999/0001-99"
-                required
                 value={cnpj}
                 onChange={(event) => setCnpj(event.target.value)}
               />
@@ -68,6 +67,7 @@ export function Budget() {
               title="E-mail"
               type="text"
               value={email}
+              required
               onChange={(event) => setEmail(event.target.value)}
             />
             <label htmlFor="mensagem">Mensagem</label>
@@ -78,9 +78,10 @@ export function Budget() {
               name="mensagem"
               title="mensagem"
               value={message}
+              required
               onChange={(event) => setMessage(event.target.value)}
             />
-            <Button type="button">Enviar mensagem</Button>
+            <Button type="submit">Enviar mensagem</Button>
           </form>
         </div>
       </div>

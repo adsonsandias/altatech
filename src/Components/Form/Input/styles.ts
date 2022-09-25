@@ -11,12 +11,19 @@ export const InputStyles = styled.input`
   font-size: 1.13rem;
   line-height: 1.69rem;
   height: 3.63rem;
+  width: 100%;
+
+  @media (max-width: 680px) {
+    height: 3rem;
+  }
 
   @media (max-width: 480px) {
-    height: 3.5rem;
+    height: 2.63rem;
     font-size: 0.88rem;
     left: 0rem;
     right: 0rem;
+    border-radius: 0.63rem;
+    padding: 0.5rem;
   }
 
   &::placeholder {
@@ -37,4 +44,13 @@ export const LabelStyles = styled.label`
   line-height: 1.69rem;
   color: var(--text-color-2);
   margin-bottom: 0.5rem;
+
+  @media (max-width: 680px) {
+    font-size: 1rem;
+    line-height: initial;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.88rem;
+  }
 `;
