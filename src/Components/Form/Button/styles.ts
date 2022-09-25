@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const ButtonStyles = styled.button`
+export const ButtonStyles = styled(motion.button)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +15,8 @@ export const ButtonStyles = styled.button`
   line-height: 1.69rem;
   color: #ffffff;
   padding: 0.13rem;
-  transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.1);
     box-shadow: 10px 15px 25px rgba(0, 124, 255, 0.25),
       -10px -5px 25px rgba(223, 181, 235, 0.25);
   }

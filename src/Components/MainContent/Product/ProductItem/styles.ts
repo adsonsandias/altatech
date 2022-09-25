@@ -100,7 +100,6 @@ export const Container = styled.div`
         color: #ffffff;
         padding: 0.13rem;
         align-self: center;
-        transition: all 0.3s ease;
         @media (max-width: 980px) {
           font-size: 1rem;
         }
@@ -111,10 +110,6 @@ export const Container = styled.div`
         }
         @media (max-width: 480px) {
           display: none;
-        }
-
-        &:hover {
-          transform: scale(1.1);
         }
       }
     }

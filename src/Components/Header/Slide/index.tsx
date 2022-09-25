@@ -1,9 +1,9 @@
 import { Container } from './styles';
 
 import IconeNuvem from '../../../assets/nuvem.png';
-import { ReactComponent as IconeArrowLeft } from '../../../assets/arrow-left.svg';
-import { ReactComponent as IconeArrowRight } from '../../../assets/arrow-right.svg';
+
 import { Button } from '../../Form/Button';
+import { NavSlide } from '../../Help/NavSlide/NavSlide';
 
 export function Slide() {
   return (
@@ -26,12 +26,7 @@ export function Slide() {
         </span>
       </div>
       <div>
-        <button type="button">
-          <IconeArrowLeft />
-        </button>
-        <button type="button">
-          <IconeArrowRight />
-        </button>
+        <NavSlide />
       </div>
     </Container>
   );

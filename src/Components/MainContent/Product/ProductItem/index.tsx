@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import notebook from '../../../../assets/Notebook.jpg';
 import { Container } from './styles';
 
@@ -11,7 +13,9 @@ export function ProductItem() {
         <div>
           <span>82ME0002BR</span>
           <strong>Notebook Lenovo V15 I5-1135G7 8Gb Ram 500GB SSD</strong>
-          <button>Solicitar Orçamento</button>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            Solicitar Orçamento
+          </motion.button>
         </div>
       </div>
     </Container>

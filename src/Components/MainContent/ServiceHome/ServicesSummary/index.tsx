@@ -3,8 +3,7 @@ import { Button } from '../../../Form/Button';
 import { Container, NavStyles } from './styles';
 
 import { ReactComponent as IconeArrowServices } from '../../../../assets/arrow-services.svg';
-import { ReactComponent as IconeArrowLeft } from '../../../../assets/arrow-left.svg';
-import { ReactComponent as IconeArrowRight } from '../../../../assets/arrow-right.svg';
+import { NavSlide } from '../../../Help/NavSlide/NavSlide';
 
 export function ServicesSummary() {
   return (
@@ -104,12 +103,7 @@ export function ServicesSummary() {
       </div>
 
       <NavStyles>
-        <button type="button">
-          <IconeArrowLeft />
-        </button>
-        <button type="button">
-          <IconeArrowRight />
-        </button>
+        <NavSlide />
       </NavStyles>
     </Container>
   );
