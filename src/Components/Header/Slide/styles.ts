@@ -27,8 +27,18 @@ export const Container = styled.div`
     align-items: center;
     position: relative;
 
+    @media (max-width: 1020px) {
+      margin-bottom: 2.63rem;
+      margin-top: 2.63rem;
+    }
+    @media (max-width: 930px) {
+      margin-bottom: 1.5rem;
+      margin-top: 1.5rem;
+    }
     @media (max-width: 480px) {
       flex-direction: column-reverse;
+      margin-bottom: 0rem;
+      margin-top: 0rem;
     }
 
     & > div {
@@ -79,8 +89,14 @@ export const Container = styled.div`
       }
     }
 
-    & > svg:last-child {
+    & > span {
       margin-top: 2rem;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+      }
 
       @media (max-width: 1120px) {
         max-width: 512px;
@@ -88,6 +104,7 @@ export const Container = styled.div`
 
       @media (max-width: 1020px) {
         max-width: 420px;
+        margin-top: 0rem;
       }
       @media (max-width: 930px) {
         max-width: 360px;
