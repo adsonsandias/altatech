@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container } from './styles';
 
+import { ReactComponent as IconSend } from '../../assets/go.svg';
+
 export function Newsletter() {
   const [email, setEmail] = React.useState('');
 
@@ -26,7 +28,10 @@ export function Newsletter() {
             required
           />
           <button type="submit">
-            <div>Inscreva-se</div>
+            <div>
+              <IconSend />
+              <span>Inscreva-se</span>
+            </div>
           </button>
         </div>
       </form>

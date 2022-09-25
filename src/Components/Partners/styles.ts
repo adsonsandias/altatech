@@ -48,6 +48,36 @@ export const Container = styled.section`
       gap: 0.75rem;
       justify-items: center;
       align-items: center;
+      padding-bottom: 2rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 680px) {
+        overflow: auto;
+        height: 300px;
+        grid-template-columns: repeat(8, 100px);
+
+        li {
+          img {
+            max-width: 100px;
+          }
+        }
+      }
+
+      @media (max-width: 480px) {
+        grid-template-columns: repeat(8, 68px);
+        height: 258px;
+
+        li {
+          img {
+            max-width: 68px;
+          }
+        }
+      }
     }
   }
 `;
