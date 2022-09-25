@@ -2,6 +2,22 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   margin-top: 7.5rem;
+  @media (max-width: 1180px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  @media (max-width: 930px) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  @media (max-width: 780px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @media (max-width: 680px) {
+    margin-top: 3.88rem;
+  }
+
   h1 {
     font-weight: 600;
     font-size: 3rem;
@@ -16,12 +32,12 @@ export const Container = styled.section`
 
     @media (max-width: 680px) {
       font-size: 2.25rem;
-      margin-bottom: 1.5rem;
+      line-height: 1;
     }
 
     @media (max-width: 480px) {
       font-size: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       line-height: initial;
     }
   }
@@ -47,8 +63,8 @@ export const Container = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 256px;
-        height: 64px;
+        width: 16rem;
+        height: 4rem;
         border: none;
         background: var(--primary-gradient);
         border-radius: 14px;
@@ -62,6 +78,15 @@ export const Container = styled.section`
         right: -3px;
         top: -3px;
         z-index: 1;
+        @media (max-width: 680px) {
+          width: 12.5rem;
+          height: 3.38rem;
+        }
+        @media (max-width: 480px) {
+          font-size: 1rem;
+          width: 4rem;
+          height: 3rem;
+        }
 
         &:hover {
           font-size: 1.25rem;
@@ -78,6 +103,19 @@ export const Container = styled.section`
           background: rgba(255, 255, 255, 0.36);
           backdrop-filter: blur(28px);
           border-radius: 12px;
+
+          svg {
+            display: none;
+          }
+          @media (max-width: 480px) {
+            span {
+              display: none;
+            }
+
+            svg {
+              display: block;
+            }
+          }
         }
       }
 
@@ -92,9 +130,12 @@ export const Container = styled.section`
         font-size: 1.13rem;
         line-height: 1.69rem;
         height: 3.63rem;
+        @media (max-width: 680px) {
+          height: 3rem;
+        }
 
         @media (max-width: 480px) {
-          height: 3.5rem;
+          height: 2.63rem;
           font-size: 0.88rem;
           left: 0rem;
           right: 0rem;
