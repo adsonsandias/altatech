@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     --primary-color: #203C87;
     --secondary-color: #007CFF;
     --tertiary-color: #EDF1F8;
+    --details-color: #8f93f1;
     --text-color-2: #434343;
     --text-color-3: #7e7f81;
   }
@@ -18,9 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body, #root {
     width: 100vw;
-    /* height: 100%; */
-    height: 8000px;
-    
+    height: 100%;    
   }
 
   #root{
