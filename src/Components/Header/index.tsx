@@ -14,9 +14,9 @@ import { ReactComponent as IconeMenuCloud } from '../../assets/cloud-upload.svg'
 import { ReactComponent as IconeMenuService } from '../../assets/service.svg';
 import { ReactComponent as IconeMenuLocation } from '../../assets/location.svg';
 
-import { ReactComponent as BackgroundEffect01 } from '../../assets/Ellipse1.svg';
-import { ReactComponent as BackgroundEffect02 } from '../../assets/Ellipse2.svg';
-import { ReactComponent as BackgroundEffect03 } from '../../assets/Ellipse3.svg';
+import BackgroundEffect01 from '../../assets/ellipse1.png';
+import BackgroundEffect02 from '../../assets/ellipse2.png';
+import BackgroundEffect03 from '../../assets/ellipse3.png';
 
 import {
   ButtonMenuMobileStyles,
@@ -34,14 +34,15 @@ export function Header() {
 
   return (
     <HeaderStyles>
+      <img src={BackgroundEffect01} alt="Background Effect 01" />
+      <img src={BackgroundEffect02} alt="Background Effect 02" />
+      <img src={BackgroundEffect03} alt="Background Effect 03" />
+
       <ContactHeaderStyles>
         Entre em contato conosco no telefone <span>(43) 2105-1002</span> e faça
         seu orçamento!
       </ContactHeaderStyles>
       <ContentsHeaderStyles>
-        <BackgroundEffect01 />
-        <BackgroundEffect02 />
-        <BackgroundEffect03 />
         <div>
           <IconeLogo />
           <IconeLogoMobile />

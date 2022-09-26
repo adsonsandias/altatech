@@ -174,6 +174,9 @@ export const Container = styled.div`
     justify-self: center;
     position: relative;
     grid-column: 1/-1;
+    @media (max-width: 880px) {
+      grid-column: initial;
+    }
 
     @media (max-width: 480px) {
       margin-top: 1.5rem;

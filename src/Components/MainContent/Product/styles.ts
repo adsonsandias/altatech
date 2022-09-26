@@ -4,8 +4,7 @@ export const Container = styled.section`
   max-width: 1120px;
   margin: 0 auto;
   margin-top: 3.88rem;
-  display: flex;
-  flex-direction: column;
+
   @media (max-width: 1180px) {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -68,6 +67,6 @@ export const Container = styled.section`
   }
 
   & > button {
-    align-self: center;
+    margin: 0 auto;
   }
 `;

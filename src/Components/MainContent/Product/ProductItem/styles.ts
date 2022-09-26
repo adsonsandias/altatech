@@ -6,16 +6,18 @@ export const Container = styled.div`
   box-shadow: 10px 15px 25px rgba(192, 192, 192, 0.25),
     -10px -5px 25px rgba(228, 228, 228, 0.25);
   border-radius: 1.56rem;
-  overflow: hidden;
-  max-width: 22rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+
   @media (max-width: 880px) {
-    width: 256px;
+    width: 16rem;
+    height: 100%;
   }
   @media (max-width: 680px) {
-    width: 200px;
+    width: 12.5rem;
   }
   @media (max-width: 480px) {
-    width: 122px;
+    width: 7.63rem;
     border-radius: 1rem;
   }
 
@@ -34,10 +36,18 @@ export const Container = styled.div`
     /* Image Product */
     div:first-child {
       img {
-        max-width: 18.75rem;
         display: block;
         width: 100%;
         height: 100%;
+        @media (max-width: 880px) {
+          max-width: 204px;
+        }
+        @media (max-width: 680px) {
+          max-width: 164px;
+        }
+        @media (max-width: 480px) {
+          max-width: 102px;
+        }
       }
     }
 
