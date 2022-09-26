@@ -4,6 +4,9 @@ export const Container = styled.footer`
   background: var(--tertiary-color);
   padding-top: 3.88rem;
   position: relative;
+  @media (max-width: 480px) {
+    padding-top: 0rem;
+  }
 
   &::before {
     max-width: 1120px;
@@ -26,6 +29,7 @@ export const FooterInforStyles = styled.div`
   margin: 0 auto;
   padding: 3.25rem 0;
   display: grid;
+  gap: 1.5rem;
   grid-template-columns: 4fr 5fr 3fr;
 
   @media (max-width: 1180px) {
@@ -35,18 +39,26 @@ export const FooterInforStyles = styled.div`
   @media (max-width: 930px) {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   @media (max-width: 780px) {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  @media (max-width: 680px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 
   h5 {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+
     color: var(--text-color-2);
     margin-bottom: 1.5rem;
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+    }
   }
 
   ul {
@@ -59,9 +71,12 @@ export const FooterInforStyles = styled.div`
         display: block;
         text-decoration: none;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
         color: var(--text-color-2);
+
+        @media (max-width: 480px) {
+          font-size: 0.88rem;
+        }
       }
 
       a {
@@ -73,6 +88,9 @@ export const FooterInforStyles = styled.div`
 
       & + li {
         margin-top: 1rem;
+        @media (max-width: 480px) {
+          margin-top: 0.88rem;
+        }
       }
     }
   }
@@ -116,8 +134,8 @@ export const FooterCopyStyles = styled.div`
           a {
             text-decoration: none;
             font-weight: 400;
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 0.75rem;
+            line-height: 1.13rem;
             color: #ffffff;
             transition: all 0.3s ease;
 

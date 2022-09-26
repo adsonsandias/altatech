@@ -1,36 +1,59 @@
 import styled from 'styled-components';
 
 export const HeaderStyles = styled.header`
-  height: 714px;
   overflow: hidden;
   position: relative;
+  padding-bottom: 82px;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 
-  @media (max-width: 1020px) {
-    height: 674px;
-  }
-  @media (max-width: 930px) {
-    height: 600px;
-  }
-  @media (max-width: 850px) {
+  @media (max-width: 480px) {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 95%);
   }
-  @media (max-width: 780px) {
-    height: 576px;
+
+  /* Bg Header Elemente */
+
+  & > img:nth-child(1) {
+    pointer-events: none;
+    position: absolute;
+    right: -638px;
+    top: -513px;
+    z-index: -2;
+
+    @media (max-width: 980px) {
+      right: -768px;
+      top: -626px;
+    }
   }
-  @media (max-width: 680px) {
-    height: 532px;
+
+  & > img:nth-child(2) {
+    position: absolute;
+    pointer-events: none;
+    right: -660px;
+    bottom: -758px;
+    z-index: -1;
+    @media (max-width: 980px) {
+      right: -826px;
+      bottom: -1032px;
+    }
+    @media (max-width: 480px) {
+      width: 950px;
+      height: 950px;
+      right: -503px;
+      bottom: -439px;
+    }
   }
-  @media (max-width: 632px) {
-    height: 500px;
-  }
-  @media (max-width: 530px) {
-    height: 396px;
-  }
-  @media (max-width: 480px) {
-    height: 520px;
+  & > img:nth-child(3) {
+    pointer-events: none;
+    position: absolute;
+    left: -648px;
+    bottom: -418px;
+    z-index: -3;
+    @media (max-width: 980px) {
+      left: -732px;
+      bottom: -598px;
+    }
   }
 `;
 
@@ -72,32 +95,6 @@ export const ContentsHeaderStyles = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     height: 4rem;
-  }
-
-  /* Bg Header Elemente */
-  & > svg:nth-child(1) {
-    pointer-events: none;
-    position: absolute;
-    right: -224px;
-    top: -46px;
-    z-index: -1;
-    filter: blur(200px);
-  }
-  & > svg:nth-child(2) {
-    position: absolute;
-    pointer-events: none;
-    right: -370px;
-    top: 228px;
-    z-index: -1;
-    filter: blur(200px);
-  }
-  & > svg:nth-child(3) {
-    pointer-events: none;
-    position: absolute;
-    left: -166px;
-    top: 446px;
-    z-index: -1;
-    filter: blur(200px);
   }
 
   & > div {
@@ -268,7 +265,6 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
     width: 40px;
     height: 40px;
     background-color: transparent;
-    /* transition: all 0.3s ease; */
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.3);

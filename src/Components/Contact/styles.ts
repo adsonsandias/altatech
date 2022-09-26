@@ -4,6 +4,9 @@ export const Container = styled.section`
   background: var(--tertiary-color);
   margin-top: 7.5rem;
   padding-bottom: 3.88rem;
+  @media (max-width: 480px) {
+    padding-bottom: 0rem;
+  }
 
   & > div {
     max-width: 1120px;
