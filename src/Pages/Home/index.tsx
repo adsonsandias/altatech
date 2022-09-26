@@ -1,4 +1,6 @@
 import { Budget } from '../../Components/Budget';
+import { Contact } from '../../Components/Contact';
+import { Footer } from '../../Components/Footer';
 import { Header } from '../../Components/Header';
 import { MainContent } from '../../Components/MainContent';
 import { Newsletter } from '../../Components/Newsletter';
@@ -12,6 +14,8 @@ export function Homer() {
       <Budget />
       <Partners />
       <Newsletter />
+      <Contact />
+      <Footer />
     </>
   );
 }
