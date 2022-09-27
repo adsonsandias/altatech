@@ -8,17 +8,22 @@ import { Button } from '../../../Form/Button';
 import { ReactComponent as IconeArrowServices } from '../../../../assets/arrow-services.svg';
 
 export function ServicesSummary() {
-  const [width, setWidth] = React.useState(0);
+  const [widthContainer, setWidthContainer] = React.useState(0);
   const carousel = React.useRef<any>();
 
   React.useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    setWidthContainer(
+      carousel.current.scrollWidth - carousel.current.offsetWidth,
+    );
   }, []);
 
   return (
     <Container ref={carousel}>
       <AnimatePresence>
-        <motion.div drag="x" dragConstraints={{ right: 0, left: -width }}>
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -widthContainer }}
+        >
           <motion.div key={1}>
             <h4>Backup em Nuvem</h4>
             <span>Altatech Cloud</span>
