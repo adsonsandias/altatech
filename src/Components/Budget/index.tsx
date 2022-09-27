@@ -1,13 +1,14 @@
+import React from 'react';
+import { Container } from './styles';
+
 import { Button } from '../Form/Button';
 import { Input } from '../Form/Input';
-import { Container } from './styles';
 
 import { ReactComponent as BgRequest01 } from '../../assets/request/bg-request-01.svg';
 import { ReactComponent as BgRequest02 } from '../../assets/request/bg-request-02.svg';
 import { ReactComponent as BgRequest03 } from '../../assets/request/bg-request-03.svg';
 import { ReactComponent as BgRequest04 } from '../../assets/request/bg-request-04.svg';
 import { ReactComponent as BgRequest05 } from '../../assets/request/bg-request-05.svg';
-import React from 'react';
 
 export function Budget() {
   const [phone, setPhone] = React.useState('');

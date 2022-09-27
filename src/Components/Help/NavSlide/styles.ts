@@ -12,29 +12,29 @@ export const NavStyles = styled(motion.div)`
   }
   @media (max-width: 480px) {
     padding-top: 1rem;
-    height: 32px;
+    height: 2rem;
   }
 
   button {
-    width: 64px;
-    height: 40px;
+    width: 4rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
+    border-radius: 3.13rem;
 
     &:hover {
       box-shadow: 0px 6px 19px rgba(160, 184, 255, 0.25);
     }
 
     @media (max-width: 480px) {
-      width: 54px;
-      height: 32px;
+      width: 3.38rem;
+      height: 2rem;
 
       svg {
-        height: 18px;
+        height: 1.13rem;
       }
     }
 

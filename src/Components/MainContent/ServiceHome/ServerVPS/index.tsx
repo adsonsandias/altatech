@@ -1,5 +1,6 @@
-import { Button } from '../../../Form/Button';
 import { Container } from './styles';
+
+import { Button } from '../../../Form/Button';
 
 import { ReactComponent as IconeLowLatency } from '../../../../assets/benefit/low-latency.svg';
 import { ReactComponent as IconePayInReais } from '../../../../assets/benefit/pay-in-reais.svg';

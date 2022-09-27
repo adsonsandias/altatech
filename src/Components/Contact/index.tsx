@@ -1,6 +1,7 @@
+import { Container } from './styles';
+
 import { ContactItem } from './ContactItem';
 import { contactslist } from './contactslist';
-import { Container } from './styles';
 
 export function Contact() {
   return (

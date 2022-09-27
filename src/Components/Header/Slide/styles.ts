@@ -19,29 +19,40 @@ export const Container = styled.div`
     align-items: center;
   }
   /* Conteudo Slide */
-  & > div:first-child {
+  & > div:first-child > div {
     max-width: 1120px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    height: 27.75rem;
 
     @media (max-width: 1020px) {
       margin-bottom: 2.63rem;
       margin-top: 2.63rem;
+      height: 18.75rem;
     }
     @media (max-width: 930px) {
       margin-bottom: 1.5rem;
       margin-top: 1.5rem;
+      height: 12.5rem;
+    }
+    @media (max-width: 780px) {
+      height: 200px;
     }
     @media (max-width: 480px) {
       flex-direction: column-reverse;
       margin-bottom: 0rem;
       margin-top: 0rem;
+      height: 22.5rem;
     }
 
     & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       @media (max-width: 480px) {
         display: flex;
         flex-direction: column;
@@ -52,16 +63,16 @@ export const Container = styled.div`
         margin-top: 1.5rem;
 
         @media (max-width: 930px) {
-          max-width: 200px;
+          max-width: 12.5rem;
         }
       }
 
       h1 {
-        max-width: 18ch;
+        width: 18ch;
         font-size: 3rem;
         font-weight: 600;
         color: var(--text-color-2);
-        white-space: nowrap;
+
         @media (max-width: 1120px) {
           font-size: 2.38rem;
         }
@@ -99,25 +110,25 @@ export const Container = styled.div`
       }
 
       @media (max-width: 1120px) {
-        max-width: 512px;
+        max-width: 32rem;
       }
 
       @media (max-width: 1020px) {
-        max-width: 420px;
+        max-width: 26.25rem;
         margin-top: 0rem;
       }
       @media (max-width: 930px) {
-        max-width: 360px;
-        max-height: 280px;
+        max-width: 22.5rem;
+        max-height: 17.5rem;
       }
       @media (max-width: 780px) {
-        max-width: 360px;
-        max-height: 280px;
+        max-width: 22.5rem;
+        max-height: 17.5rem;
       }
       @media (max-width: 480px) {
         margin-top: 0rem;
-        max-width: 230px;
-        max-height: 180px;
+        max-width: 14.38rem;
+        max-height: 11.25rem;
       }
     }
   }

@@ -1,6 +1,7 @@
+import { Container } from './styles';
+
 import { Product } from './Product';
 import { ServiceHome } from './ServiceHome';
-import { Container } from './styles';
 
 export function MainContent() {
   return (

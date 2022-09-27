@@ -22,7 +22,7 @@ export const Container = styled.div`
   }
 
   & > div {
-    background: #fff;
+    background: var(--base-color);
     border-radius: 1.5rem;
     padding: 1.5rem;
     @media (max-width: 680px) {
@@ -40,13 +40,13 @@ export const Container = styled.div`
         width: 100%;
         height: 100%;
         @media (max-width: 880px) {
-          max-width: 204px;
+          max-width: 12.75rem;
         }
         @media (max-width: 680px) {
-          max-width: 164px;
+          max-width: 10.25rem;
         }
         @media (max-width: 480px) {
-          max-width: 102px;
+          max-width: 6.38rem;
         }
       }
     }
@@ -59,8 +59,8 @@ export const Container = styled.div`
       span {
         color: #b1b1b1;
         font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 0.75rem;
+        line-height: 1.13rem;
         text-transform: uppercase;
         margin-bottom: 0.38rem;
 
@@ -98,16 +98,16 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 256px;
+        max-width: 16rem;
         width: 100%;
-        height: 58px;
+        height: 3.63rem;
         border: none;
         background: #434343;
         border-radius: 0.94rem;
         font-weight: 600;
         font-size: 1.13rem;
         line-height: 1.69rem;
-        color: #ffffff;
+        color: var(--base-color);
         padding: 0.13rem;
         align-self: center;
         @media (max-width: 980px) {

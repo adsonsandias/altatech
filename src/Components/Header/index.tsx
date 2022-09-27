@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
-import { Slide } from './Slide';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
+import { Slide } from './Slide';
 
 import { ReactComponent as IconeBag } from '../../assets/bag.svg';
 import { ReactComponent as IconeLogo } from '../../assets/logo.svg';

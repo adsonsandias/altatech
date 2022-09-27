@@ -46,9 +46,9 @@ export const Container = styled.section`
     max-width: 58rem;
     margin: 0 auto;
     width: 100%;
-    padding: 3px;
+    padding: 0.19rem;
     background: var(--primary-gradient);
-    border-radius: 15px;
+    border-radius: 0.94rem;
     overflow: hidden;
 
     & > div {
@@ -56,7 +56,7 @@ export const Container = styled.section`
       justify-content: space-between;
       width: 100%;
       background-color: #fff;
-      border-radius: 15px;
+      border-radius: 0.94rem;
       position: relative;
 
       button {
@@ -67,16 +67,16 @@ export const Container = styled.section`
         height: 4rem;
         border: none;
         background: var(--primary-gradient);
-        border-radius: 14px;
+        border-radius: 0.88rem;
         font-weight: 600;
         font-size: 1.13rem;
         line-height: 1.69rem;
-        color: #ffffff;
+        color: var(--base-color);
         padding: 0.19rem;
         transition: all 0.3s ease;
         position: absolute;
-        right: -3px;
-        top: -3px;
+        right: -0.19rem;
+        top: -0.19rem;
         z-index: 1;
         @media (max-width: 680px) {
           width: 12.5rem;
@@ -102,7 +102,7 @@ export const Container = styled.section`
           min-height: 100%;
           background: rgba(255, 255, 255, 0.36);
           backdrop-filter: blur(28px);
-          border-radius: 12px;
+          border-radius: 0.75rem;
 
           svg {
             display: none;
@@ -121,9 +121,9 @@ export const Container = styled.section`
 
       input {
         width: 100%;
-        display: #ffffff;
+        display: var(--base-color);
         padding: 1rem;
-        border-radius: 13px;
+        border-radius: 0.81rem;
         transition: all ease 0.3s;
         border: none;
         font-weight: 400;
@@ -148,7 +148,7 @@ export const Container = styled.section`
         &:hover,
         &:focus {
           outline: none;
-          border: 1.5px solid #8f93f1;
+          border: 1.5px solid var(--details-color);
           box-shadow: inset 0px 0px 0px 4px rgba(242, 243, 252, 0.5),
             inset 0px 0px 0px 5px rgba(180, 183, 251, 0.8);
         }
