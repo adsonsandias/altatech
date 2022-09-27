@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { Container } from './styles';
+import { useWindowSize } from '../../../../hooks/useWindowSize';
 
 import { Button } from '../../../Form/Button';
 import { ReactComponent as IconeArrowServices } from '../../../../assets/arrow-services.svg';
@@ -10,12 +11,13 @@ import { ReactComponent as IconeArrowServices } from '../../../../assets/arrow-s
 export function ServicesSummary() {
   const [widthContainer, setWidthContainer] = React.useState(0);
   const carousel = React.useRef<any>();
+  const [width] = useWindowSize();
 
   React.useEffect(() => {
     setWidthContainer(
       carousel.current.scrollWidth - carousel.current.offsetWidth,
     );
-  }, []);
+  }, [width]);
 
   return (
     <Container ref={carousel}>
