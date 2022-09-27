@@ -1,14 +1,25 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  overflow-x: hidden;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+    background-color: #ffffff;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: #a0b8ff;
+  }
 
   & > div:first-child {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     @media (max-width: 480px) {
       gap: 1rem;
       margin-top: 1rem;
@@ -33,6 +44,7 @@ export const Container = styled.div`
       padding: 3.25rem;
       border-radius: 1.56rem;
       cursor: grab;
+
       @media (max-width: 680px) {
         padding: 2rem;
         min-width: 23.25rem;
@@ -101,6 +113,10 @@ export const Container = styled.div`
             border-radius: 0.63rem;
             @media (max-width: 480px) {
               padding: 0.5rem 1rem;
+            }
+
+            &:hover {
+              background: #e1e5eb;
             }
 
             span {

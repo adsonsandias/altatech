@@ -23,6 +23,7 @@ import BackgroundEffect01 from '../../assets/ellipse1.png';
 import BackgroundEffect02 from '../../assets/ellipse2.png';
 import BackgroundEffect03 from '../../assets/ellipse3.png';
 import { motion } from 'framer-motion';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 // MotionEffects
 
@@ -59,6 +60,16 @@ export const itemVariant = {
 export function Header() {
   const [menuMobile, setMenuMobile] = React.useState(false);
   const [search, setSearch] = React.useState(false);
+
+  const [width] = useWindowSize();
+
+  React.useEffect(() => {
+    const isWidth = () => {
+      if (width >= 850) setMenuMobile(true);
+      else setMenuMobile(false);
+    };
+    isWidth();
+  }, [width]);
 
   return (
     <HeaderStyles>
