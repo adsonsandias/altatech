@@ -1,14 +1,18 @@
-import { motion } from 'framer-motion';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Slide } from './Slide';
+import {
+  ContactHeaderStyles,
+  ContentsHeaderStyles,
+  HeaderStyles,
+  NavStyles,
+} from './styled';
 
-import { ReactComponent as IconeBag } from '../../assets/bag.svg';
+import { Slide } from './Slide';
+import { UtilityContents } from './UtilityMenu';
+
 import { ReactComponent as IconeLogo } from '../../assets/logo.svg';
 import { ReactComponent as IconeLogoMobile } from '../../assets/logo-mobile.svg';
-import { ReactComponent as IconeSearch } from '../../assets/search.svg';
-import { ReactComponent as IconeUser } from '../../assets/user.svg';
-import { ReactComponent as IconeMenu } from '../../assets/menu.svg';
 
 import { ReactComponent as IconeMenuProduct } from '../../assets/product.svg';
 import { ReactComponent as IconeMenuCloud } from '../../assets/cloud-upload.svg';
@@ -18,16 +22,39 @@ import { ReactComponent as IconeMenuLocation } from '../../assets/location.svg';
 import BackgroundEffect01 from '../../assets/ellipse1.png';
 import BackgroundEffect02 from '../../assets/ellipse2.png';
 import BackgroundEffect03 from '../../assets/ellipse3.png';
+import { motion } from 'framer-motion';
 
-import {
-  ButtonMenuMobileStyles,
-  ContactHeaderStyles,
-  ContentsHeaderStyles,
-  HeaderStyles,
-  NavStyles,
-  UtilityContentsStyles,
-} from './styled';
-import React from 'react';
+// MotionEffects
+
+const item = {
+  hidden: {
+    opacity: 0,
+    transform: 'translate3d(-9px, -17px, 10px)',
+    width: '10px',
+    height: '10px',
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+  show: {
+    opacity: 1,
+    transform: 'translate3d(-20px, 0px, 10px)',
+    width: '236px',
+    height: '224px',
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+};
+
+export const itemVariant = {
+  hidden: { x: 20, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+// MotionEffects end
 
 export function Header() {
   const [menuMobile, setMenuMobile] = React.useState(false);
@@ -43,81 +70,48 @@ export function Header() {
         Entre em contato conosco no telefone <span>(43) 2105-1002</span> e faça
         seu orçamento!
       </ContactHeaderStyles>
+
       <ContentsHeaderStyles>
         <div>
           <IconeLogo />
           <IconeLogoMobile />
         </div>
-        <NavStyles isActive={menuMobile}>
-          <ul>
-            <li>
+
+        <NavStyles isactive={menuMobile.toString()}>
+          <motion.ul animate={menuMobile ? 'show' : 'hidden'} variants={item}>
+            <motion.li variants={itemVariant}>
               <Link to="/">
                 {menuMobile === true ? <IconeMenuProduct /> : ''}
                 <span>Produtos</span>
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariant}>
               <Link to="/">
                 {menuMobile === true ? <IconeMenuService /> : ''}
                 <span>Serviços</span>
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariant}>
               <Link to="/">
                 {menuMobile === true ? <IconeMenuLocation /> : ''}
                 <span>Locação</span>
               </Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariant}>
               <Link to="/">
                 {menuMobile === true ? <IconeMenuCloud /> : ''}
                 <span>Cloud</span>
               </Link>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </NavStyles>
 
-        <UtilityContentsStyles isOpen={search}>
-          <input
-            type="search"
-            placeholder="Buscar..."
-            name="search"
-            id="search"
-          />
-
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => setSearch(!search)}
-            type="button"
-          >
-            <IconeSearch />
-          </motion.button>
-
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            type="button"
-          >
-            <IconeBag />
-          </motion.button>
-
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            type="button"
-          >
-            <IconeUser />
-          </motion.button>
-
-          <ButtonMenuMobileStyles
-            isActive={menuMobile}
-            onClick={() => setMenuMobile(!menuMobile)}
-            type="button"
-          >
-            <IconeMenu />
-          </ButtonMenuMobileStyles>
-        </UtilityContentsStyles>
+        <UtilityContents
+          menuMobile={menuMobile}
+          setMenuMobile={() => setMenuMobile(!menuMobile)}
+          onClick={() => setSearch(!search)}
+          search={search}
+        />
       </ContentsHeaderStyles>
       <Slide />
     </HeaderStyles>
