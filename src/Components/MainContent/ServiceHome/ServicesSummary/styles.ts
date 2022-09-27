@@ -1,18 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  overflow-x: scroll;
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 8px;
-    background-color: #ffffff;
-  }
-  &::-webkit-scrollbar-thumb {
-    width: 4px;
-    height: 2px;
-    border-radius: 1rem;
-    background-color: #a0b8ff;
-  }
+  overflow-x: hidden;
 
   & > div:first-child {
     display: grid;
