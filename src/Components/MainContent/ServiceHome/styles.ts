@@ -13,6 +13,7 @@ export const Container = styled.section`
     max-width: 1120px;
     margin: 0 auto;
     position: relative;
+
     @media (max-width: 1180px) {
       margin-left: 2rem;
       margin-right: 2rem;

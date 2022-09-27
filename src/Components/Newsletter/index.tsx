@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Container } from './styles';
 
 import { ReactComponent as IconSend } from '../../assets/go.svg';

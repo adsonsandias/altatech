@@ -25,7 +25,7 @@ export const Container = styled.section`
       font-weight: 600;
       font-size: 3rem;
       line-height: 4.5rem;
-      color: #ffffff;
+      color: var(--base-color);
       text-align: center;
       margin-bottom: 3rem;
 
@@ -58,23 +58,23 @@ export const Container = styled.section`
 
       @media (max-width: 680px) {
         overflow: auto;
-        height: 300px;
+        height: 18.75rem;
         grid-template-columns: repeat(8, 100px);
 
         li {
           img {
-            max-width: 100px;
+            max-width: 6.25rem;
           }
         }
       }
 
       @media (max-width: 480px) {
         grid-template-columns: repeat(8, 68px);
-        height: 258px;
+        height: 16.13rem;
 
         li {
           img {
-            max-width: 68px;
+            max-width: 4.25rem;
           }
         }
       }

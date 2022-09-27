@@ -16,7 +16,7 @@ export const Container = styled.footer`
     height: 2px;
     display: block;
     background: linear-gradient(274.05deg, #a0b8ff 33.64%, #f3feff 122.13%);
-    border-radius: 10px;
+    border-radius: 0.63rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -136,7 +136,7 @@ export const FooterCopyStyles = styled.div`
             font-weight: 400;
             font-size: 0.75rem;
             line-height: 1.13rem;
-            color: #ffffff;
+            color: var(--base-color);
             transition: all 0.3s ease;
 
             &:hover {
@@ -151,7 +151,7 @@ export const FooterCopyStyles = styled.div`
       font-weight: 400;
       font-size: 0.88rem;
       text-align: center;
-      color: #ffffff;
+      color: var(--base-color);
     }
   }
 `;

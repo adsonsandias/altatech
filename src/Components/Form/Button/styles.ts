@@ -5,15 +5,15 @@ export const ButtonStyles = styled(motion.button)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 256px;
-  height: 58px;
+  width: 16rem;
+  height: 3.63rem;
   border: none;
   background: var(--primary-gradient);
   border-radius: 0.94rem;
   font-weight: 600;
   font-size: 1.13rem;
   line-height: 1.69rem;
-  color: #ffffff;
+  color: var(--base-color);
   padding: 0.13rem;
 
   &:hover {
@@ -22,15 +22,15 @@ export const ButtonStyles = styled(motion.button)`
   }
 
   @media (max-width: 680px) {
-    width: 180px;
-    height: 48px;
+    width: 11.25rem;
+    height: 3rem;
     font-size: 1rem;
     line-height: initial;
   }
 
   @media (max-width: 480px) {
-    width: 160px;
-    height: 42px;
+    width: 10rem;
+    height: 2.63rem;
     font-size: 1rem;
     line-height: initial;
   }

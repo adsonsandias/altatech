@@ -7,7 +7,7 @@ export const Container = styled.li`
 
   div {
     padding: 1.13rem;
-    background: #ffffff;
+    background: var(--base-color);
     border-radius: 0.81rem;
 
     h5,

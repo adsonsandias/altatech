@@ -1,5 +1,6 @@
-import { partners } from './images';
 import { Container } from './styles';
+
+import { partners } from './images';
 
 export function Partners() {
   return (

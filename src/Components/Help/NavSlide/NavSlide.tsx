@@ -4,13 +4,20 @@ import { NavStyles } from './styles';
 import { ReactComponent as IconeArrowLeft } from '../../../assets/arrow-left.svg';
 import { ReactComponent as IconeArrowRight } from '../../../assets/arrow-right.svg';
 
-export function NavSlide() {
+interface INAVSLIDE {
+  next?: () => void;
+  prev?: () => void;
+}
+
+export function NavSlide({ ...props }: INAVSLIDE) {
+  const { next, prev } = props;
   return (
     <NavStyles>
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         type="button"
+        onClick={next}
       >
         <IconeArrowLeft />
       </motion.button>
@@ -19,6 +26,7 @@ export function NavSlide() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         type="button"
+        onClick={prev}
       >
         <IconeArrowRight />
       </motion.button>

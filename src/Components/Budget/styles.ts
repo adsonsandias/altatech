@@ -37,6 +37,7 @@ export const Container = styled.section`
       background: #ffffff;
       border-radius: 1.44rem;
       padding: 3.13rem;
+
       @media (max-width: 680px) {
         padding: 2rem;
       }
@@ -97,12 +98,12 @@ export const Container = styled.section`
         }
 
         textarea {
-          display: #ffffff;
+          display: var(--base-color);
           z-index: 9999;
           padding: 1rem;
           border-radius: 0.94rem;
           transition: all ease 0.3s;
-          border: 1.5px solid #8f93f1;
+          border: 1.5px solid var(--details-color);
           font-weight: 400;
           font-size: 1rem;
           margin-bottom: 2.63rem;
@@ -114,7 +115,7 @@ export const Container = styled.section`
           &:hover,
           &:focus {
             outline: none;
-            border: 1.5px solid #8f93f1;
+            border: 1.5px solid var(--details-color);
             box-shadow: 0px 0px 0px 4px rgba(242, 243, 252, 0.5),
               0px 0px 0px 5px rgba(180, 183, 251, 0.8);
           }

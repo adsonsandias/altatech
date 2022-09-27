@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderStyles = styled.header`
   overflow: hidden;
   position: relative;
-  padding-bottom: 82px;
+  padding-bottom: 5.13rem;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 
@@ -100,12 +100,12 @@ export const ContentsHeaderStyles = styled.div`
   & > div {
     & > svg:first-child {
       @media (max-width: 850px) {
-        width: 100px;
-        height: 18px;
+        width: 6.25rem;
+        height: 1.13rem;
       }
       @media (max-width: 480px) {
         width: 100px;
-        height: 18px;
+        height: 1.13rem;
         display: none;
       }
     }
@@ -141,7 +141,7 @@ export const NavStyles = styled.nav<IISACTIVE>`
         props.isActive ? '1.56rem 0.5rem 1.56rem 1.56rem' : '0'};
       top: 4.5rem;
       right: 1rem;
-      background: #ffffff;
+      background: var(--base-color);
       padding: 1rem;
       z-index: 9999;
     }
@@ -159,11 +159,12 @@ export const NavStyles = styled.nav<IISACTIVE>`
         border-bottom: ${(props) =>
           props.isActive ? 'none' : '2px solid transparent'};
         border-radius: ${(props) => (props.isActive ? '0.94rem' : '0')};
+
         @media (max-width: 850px) {
           display: ${(props) => (props.isActive ? 'flex' : 'none')};
           padding: 0.75rem 1.38rem;
           align-items: center;
-          width: 204px;
+          width: 12.75rem;
 
           span {
             flex: 1;
@@ -174,7 +175,7 @@ export const NavStyles = styled.nav<IISACTIVE>`
           background-color: ${(props) =>
             props.isActive ? ' #edf1f8;' : 'transparent'};
           border-bottom: ${(props) =>
-            props.isActive ? 'none' : '2px solid #a0b8ff'};
+            props.isActive ? 'none' : '2px solid var(--details-color)'};
         }
 
         svg {
@@ -205,7 +206,7 @@ export const ButtonMenuMobileStyles = styled.button<IISACTIVE>`
   @media (max-width: 850px) {
     display: flex !important;
     background: ${(props) =>
-      props.isActive ? '#fff !important' : 'transparent'};
+      props.isActive ? 'var(--base-color) !important' : 'transparent'};
   }
 `;
 
@@ -226,13 +227,13 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
     padding: 1rem 2rem;
     border-radius: 0.94rem;
     transition: all ease 0.3s;
-    border: 1.5px solid #8f93f1;
-    background: rgba(255, 255, 255, 1);
+    border: 1.5px solid var(--details-color);
+    background: var(--base-color);
     font-weight: 400;
     font-size: 1rem;
     height: 4rem;
     top: 5rem;
-    height: 48px;
+    height: 3rem;
     left: 2rem;
     right: 2rem;
 
@@ -244,13 +245,13 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
     }
 
     &::placeholder {
-      color: #8f93f1;
+      color: var(--details-color);
     }
 
     &:hover,
     &:focus {
       outline: none;
-      border: 1.5px solid #8f93f1;
+      border: 1.5px solid var(--details-color);
       box-shadow: 0px 0px 0px 4px rgba(242, 243, 252, 0.5),
         0px 0px 0px 5px rgba(180, 183, 251, 0.8);
     }
@@ -262,8 +263,8 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
     align-items: center;
     border-radius: 50%;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: transparent;
 
     &:hover {
@@ -280,7 +281,8 @@ export const UtilityContentsStyles = styled.div<IISACTIVESEARCH>`
   }
 
   button:nth-child(2) {
-    background: ${(props) => (props.isOpen ? '#fff' : 'transparent')};
+    background: ${(props) =>
+      props.isOpen ? 'var(--base-color)' : 'transparent'};
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.3);
