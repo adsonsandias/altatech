@@ -2,6 +2,7 @@ import { Container } from './styles';
 
 import { ServerVPS } from './ServerVPS';
 import { ServicesSummary } from './ServicesSummary';
+import { NavStyles } from '../../Header/styled';
 
 export function ServiceHome() {
   return (

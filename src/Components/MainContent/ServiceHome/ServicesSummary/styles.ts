@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  overflow-x: hidden;
+  overflow-x: scroll;
 
   & > div:first-child {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     gap: 2rem;
     margin-top: 2rem;
     padding-bottom: 2rem;
@@ -136,5 +135,11 @@ export const Container = styled.div`
         margin-top: 1rem;
       }
     }
+  }
+
+  /* Button Styles */
+  & > div:last-child {
+    position: absolute;
+    width: 100%;
   }
 `;
