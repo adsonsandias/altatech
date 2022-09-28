@@ -2,12 +2,24 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 0.88rem;
+    height: 0.5rem;
+    background: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 0.88rem;
+    height: 0.5rem;
+    border-radius: 0.75rem;
+
+    background: rgba(160, 184, 255, 0.35);
+  }
 
   & > div:first-child {
     display: flex;
     gap: 2rem;
     margin-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     @media (max-width: 480px) {
       gap: 1rem;
       margin-top: 1rem;
@@ -31,7 +43,6 @@ export const Container = styled.div`
       box-shadow: 0px 6px 19px rgba(160, 184, 255, 0.25);
       padding: 3.25rem;
       border-radius: 1.56rem;
-      cursor: grab;
 
       @media (max-width: 680px) {
         padding: 2rem;
@@ -139,6 +150,7 @@ export const Container = styled.div`
 
   /* Button Styles */
   & > div:last-child {
+    padding-top: 1.5rem;
     position: absolute;
     width: 100%;
   }
