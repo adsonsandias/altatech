@@ -121,7 +121,7 @@ export const ContentsHeaderStyles = styled.div`
 `;
 
 interface IISACTIVE {
-  isactive: string;
+  isactive?: string;
 }
 
 /* Nav menu */
